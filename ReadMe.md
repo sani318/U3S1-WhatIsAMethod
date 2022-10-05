@@ -1,93 +1,94 @@
 # U3S1 - What is A Method
 
-* Oracle - Foundations 4.1
+* Part 1 Oracle - Foundations 4.1
+* Part 2 - Instructor Challenge
 
-### Example and Activity 01
+## Part 1
 
-#### Step 01
+### Exercise 1
 
-In the package `lab10.part_a.examples` look at the file `Example01_TaxTotal` and write comments for each line of code. When complete review with instructor.
+* Open Tip01.java file in the project `lab.tip.tip01`
+* This is what everyone owes before tax (5%) and tip (15%)
 
-#### Step 02
+| Col 1          | Col 2               |
+|----------------|---------------------|
+| Person 1: $ 10 | Person 5 $7         |
+| Person 2: $ 12 | Person 6 $15 (Alex) |
+| Person 3: $ 9  | Person 7 $11        |
+| Person 4: $ 8  | Person 8 $30        |
 
-In the package `labs.lab10.part_a.activity` complete the `Activity01_TaxTipTotal` per the following:
+* Your program should produce the following output :
 
-    Caculate what eight different people owe for a food bill after tax and tip
-    Utilize 5% for tax and 15% for tip
-    Below is what each person owes for their individual meal:
-
-        Person 1: $10
-        Person 2: $12
-        Person 3: $9
-        Person 4: $8
-        Person 5: $7
-        Person 6: $15
-        Person 7: $11
-        Person 8: $30
-
-Your program is working correctly, if when run, the following is the output:
-Note that the sample below only shows the first 2 people, please solve for all 8.
 ```
-Person 1: 12.0
-Person 2: 14.4
+person1: $12.0
+person2: $14.4
+person3: $10.8
+person4: $9.6
+person5: $8.4
+person6: $18.0
+person7: $13.2
+person8: $36.0
 ```
 
-> Use Example01_Tax for reference.
+### Exercise 2
 
-### Example and Activity 02
+#### Part 1
 
-#### Step 01
+* Open the following files in the package `labs.calc2`
+  * CalculatorTest2.java 
+  * Calculator2.java
+* Complete the findTotal method which should:
+  * Calculate a total based on the tax, tip, and originalPrice fileds
+  * Print a person's total
 
-In the package `lab10.part_a.examples` look at the file `Example02_NoArgMethod` and write comments for each line of code. When complete review with instructor.
+#### Part 2
+* From the main method:
+  * Instantiate a `Calculator2` object named `calc`
+  * Access this objects fields and methods to print the total for each person at the birthday party.
+* Change tip and tax if you prefer different values.
 
-#### Step 02
+### Exercise 3
 
-In the package `labs.lab10.part_a.activity` complete the `Activity01_TipMethod` per the following:
+#### Part 1
 
-    Create three variables with the public access modifiers: tax, tip, and original price
-    Create a method which calculates the total due after tax / tip and then print out this value
-    Go into the TipMethodMain class, and inside of the Main method, create a new instance of the class that has the 
-    tip calculation method
-    Using that new class instance, change the tip amount, and call the method (HINT: dot operator)
+* Open the following files in the package `labs.calc3`
+  * CalculatorTest3.java
+  * Calculator3.java
+* From the main method:
+  * Use a Calculator3 object instance and supply arguments to
+    findTotal() to print the total for each person 
+  * **Hint**: Observe the findTotal() method in the Calculator class to
+    figure out how many arguments this method accepts
 
-Your program is working correctly, if when run, the following is the output (using .10 as the updated tip):
-Note that the sample below only shows the first person, please complete all 8.
-```
-11.5
-```
+#### Part 2
 
-> Use Example02_NoArgMethod for reference.
+* Who does each total belong to? 
+* Modify the findTotal() method to accept an additional
+  * String name argument 
+* Concatenate the print statement to include name 
+* Observe your IDE’s complaint in the main method and
+revise your findTotal() method calls
 
-### Example and Activity 03
+### Exercise 4
 
-#### Step 01
+#### Part 1
 
-In the package `lab10.part_a.examples` look at the file `Example03_ParameterizedMethod` and write comments for each line of code. When complete review with instructor.
+* Open the following files in the package `labs.calc4`
+* Find and print the entire table’s total, including tax and
+  tip 
+  * You'll need to edit findTotal() so that it returns its calculated
+    value
 
-#### Step 02
+#### Part 2
 
-In the package `labs.lab10.part_a.activity` complete the `Activity03_FinalTip` per the following:
+* Person8 forgot their wallet 
+* And Alex’s meal was meant to be a birthday present 
+* Modify findTotal() so that the cost of their meals are shared equally with the rest of the party 
+* Recalculate the entire table’s total 
+* This number shouldn’t have changed
 
-    Create a method called findTotal that accepts four parameters: name, tax, tip, original price
-    The method should print out the name of the person, "owes $" and the final amount owed (see example below)
-    Go into the FinalTipMain class, and inside of the Main method, create a new instance of the class that has the 
-    tip calculation method
-    Using new class instance, call the method we created and pass in the appropriate values to run it (HINT: dot operator)
 
-Your program is working correctly, if when run, the following is the output:
-```
-Gio owes $50.4
-Kaleb owes $63.0
-Tariq owes $94.5
-```
-> Parameters used:
-> Gio, 6%, 20%, $40 |
-> Kaleb, 6%, 20%, $50 |
-> Tariq, 6%, 20%, $75
 
-Note that the sample above only shows three people, please solve for all 8.
-
-> Use Example03_ParameterizedMethod for reference.
 
 
 
