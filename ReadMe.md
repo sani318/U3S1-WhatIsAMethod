@@ -1,7 +1,6 @@
 # U3S1 - What is A Method
 
 * Part 1 Oracle - Foundations 4.1
-* Part 2 - Instructor Challenge
 
 ## Part 1
 
