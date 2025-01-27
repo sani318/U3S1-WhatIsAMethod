@@ -3,10 +3,16 @@ package com.codedifferently.lab.calc2;
 public class CalculatorTest2 {
     public static void main(String[] args) {
         //Instantiate a Calculator2 object
+        Calculator2 calc = new Calculator2();
 
+        //Access the Calculator2 object's fields and methods to find the total for each member of the birthday party
+        calc.originalPrice=10.0;
+        calc.findTotal();
+        calc.originalPrice=12.0;
+        calc.findTotal();
+        calc.originalPrice=9.0;
+        calc.findTotal();
 
-        //Access the Calculator2 object's fields and methods
-        //to find the total for each member of the birthday party
 
 
         /*This is what everyone owes before tax and tip:
